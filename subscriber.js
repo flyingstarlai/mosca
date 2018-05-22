@@ -5,6 +5,10 @@ client.on('connect', ()=> {
 })
 
 client.on('message', (topic, message) => {
-  console.log(message.toString())
+  const data = message.toString();
+  const array = data.split(" ")
+  const hex = array[5] + array[6] + array[3] + array[4]
+  const tail = array[array.length - 1]
+  console.log(parseInt(hex, 16)+ " " +tail)
 })
 
