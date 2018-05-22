@@ -1,0 +1,10 @@
+{
+  "name": "mqtt-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "izayoi",
+  "license": "MIT",
+  "dependencies": {
+    "mosca": "^2.8.1"
+  }
+}
